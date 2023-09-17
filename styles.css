@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+.nav_bg{
+    background-image: url(https://images.hdqwalls.com/download/spiderman-across-the-spiderverse-9l-1920x1080.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100vh; 
+    background-color: #ffffff;
+}
+.navbox {
+    background-color: #ffffff;
+    text-shadow: 5px 5px 5px blue ;
+    color: #ff0000;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 5000;
+    
+    /* margin-top:2vh; */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    
+}
+
+#heading {
+    font-size: 17vh;
+    position: absolute;
+    top: 50vh;
+    left: 65vh;
+    color: #ff000077;
+    text-shadow: 5px 5px 5px blue;
+    z-index: 2000;
+}
+.space{
+    height: 10vh;
+    width: 2vh;
+}
+
+form {
+    display: flex;
+    background-color: white;
+}
+#search-input {
+    width: 100vh;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    color: blue;
+}
+#search-input:focus{
+    box-shadow: 0px 0px 12px 5px blue;
+}
+
+button {
+    background-color: #0508b4ca;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+}
+button:hover{
+    box-shadow: 0px 0px 20px 12px blue;
+}
+#movie-list {
+    margin-top: -10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10vh 5vh 0 5vh ;
+}
+.container {
+    background-image: url(https://images4.alphacoders.com/841/841943.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixed background image */
+    overflow: auto; /* Enable scrolling when content overflows */
+}
+
+.movie-item img {
+    max-width: 100%;
+    max-height: 80%;
+    width: 25vh;
+    height: 25vh;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
+    border-radius: 30vh;
+}
+
+.movie-item {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid cyan;
+    border-radius: 30vh;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 50vh;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0px 16px 10px red;
+}
+
+.movie-item h2 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+    background-color: transparent;
+    position: relative;
+}
+
+.movie-description {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 30vh;
+    padding-top: 20vh;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.movie-item:hover .movie-description {
+    cursor: pointer;
+    bottom: 0;
+}
